@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: probed
+source: dig + TLS/HTTP probe of craftsvilla.com
+notes: >-
+  Storefront is defunct. craftsvilla.com is served from an AWS S3 bucket that
+  301-redirects to https://www.craftsvilla.com/, but www.craftsvilla.com does not
+  resolve (NXDOMAIN) and the HTTPS root times out. No live website, API host, or
+  developer surface. The registrable domain still carries DNS records (probed
+  below); absence of a record is valid recorded data.
+hosts:
+  - host: craftsvilla.com
+    https: false
+    reachable: false
+    detail: HTTP 301 -> https://www.craftsvilla.com/ (AmazonS3); HTTPS root connection timed out; www is NXDOMAIN
+domains:
+  - domain: craftsvilla.com
+    dnssec: false
+    caa: []
+    spf: true
+    spf_record: "v=spf1 include:_spf.google.com include:spf.mandrillapp.com include:amazonses.com ~all"
+    dmarc: false
+    dmarc_policy: null
+    mx: true
+    mx_hosts:
+      - aspmx.l.google.com
+      - alt1.aspmx.l.google.com
+      - alt2.aspmx.l.google.com
+      - aspmx2.googlemail.com
+      - aspmx3.googlemail.com
