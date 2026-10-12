@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/craftsvilla/integrations
+- https://n8n.io/integrations/craftsvilla/
+- https://composio.dev/toolkits/craftsvilla
+- https://monid.ai/tools/craftsvilla
+checked:
+- https://composio.dev/toolkits/craftsvilla
+- https://monid.ai/tools/craftsvilla
+- https://n8n.io/integrations/craftsvilla/
+- https://zapier.com/apps/craftsvilla/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
